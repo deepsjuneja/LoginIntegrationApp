@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login Integration App</string>
+    <string name="heading">Login Integration</string>
+    <string name="facebook_app_id">000000000000000</string>
+    <string name="facebook_application_id">000000000000000</string>
+    <string name="fb_login_protocol_scheme">fb000000000000000</string>
+    <string name="user_id">111111111111111</string>
+</resources>
