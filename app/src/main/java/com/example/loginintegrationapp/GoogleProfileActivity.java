@@ -42,20 +42,12 @@ public class GoogleProfileActivity extends AppCompatActivity implements View.OnC
             TextView id = findViewById(R.id.profile_id);
             id.setText(mAccount.getId());
 
-            //profile image
             ImageView profileImage = (ImageView) findViewById(R.id.profile_image);
             try {
                 new LoadImage(profileImage).execute(mAccount.getPhotoUrl().toString());
             } catch (NullPointerException e) {
                 Toast.makeText(getApplicationContext(), "Image not found!", Toast.LENGTH_LONG).show();
             }
-
-//            findViewById(R.id.signout_button).setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    signOut();
-//                }
-//            });
 
             findViewById(R.id.signout_button).setOnClickListener(this);
         }
